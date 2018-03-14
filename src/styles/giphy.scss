@@ -42,22 +42,24 @@ header, footer {
   max-width: 700px;
   margin: 0 auto;
   form {
-    //position: absolute;
-    height: 155px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
     width: 95%;
-    border: 3px solid red;
-    padding: 0;
-    margin: 0 auto;
+    //border: 3px solid red;
     .search__input {
       height: 45px;
-      width: 80%;
+      flex-grow: 1;
       border: 3px solid $color-purple;
     }
     .search__button {
-      width: 55px;
+      width: 45px;
       height: auto;
       border: 0;
-      background: 0;
+      //background-image: here instead 0;
+      //check and remove padding and margins too.
       padding: 0;
       margin: 0;
     }
